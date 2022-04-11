@@ -1,0 +1,154 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+* {
+    box-sizing: border-box;
+}
+body,
+html {
+    font-size: 16px;
+}
+figure,
+img {
+    width  : 100%;
+    display: block;
+    margin : 0 auto;
+}
+
+p {
+    line-height: 1.2em;
+}
+
+.caption,
+figcaption {
+    font-size: 0.9rem;
+    color    : #8e8a8a;
+    padding  : 5px 0;
+}
+
+.container {
+    width    : 100%;
+    max-width: 800px;
+    padding  : 10px;
+    margin   : 0 auto;
+}
+
+.container.image {
+    max-width: 1200px;
+    padding  : 0;
+}
+
+.container.image .caption,
+.container.image figcaption {
+    padding: 5px 10px;
+}
+
+.calc-container {
+    background-color: #f7f7f7;
+    padding: 22px 0;
+}
+
+.calculator .row .item img {
+    margin: 5px auto;
+}
+
+.qty_container {
+    display: flex;
+}
+
+.qty_container > div {
+    flex-basis: 90%;
+}
+
+.qty_container input {
+    display: block;
+    width: 100%;
+    margin: 0%;
+    padding: 7px;
+    border: 0;
+}
+
+.qty_container .unit {
+    flex-basis: 10%;
+    background-color: #ccc;
+    padding: 6px 0;
+    text-align: center;
+}
+
+.twentyone,
+.twentytwo {
+    margin: 5px 0;
+    display: none;
+}
+
+.twentyone.active,
+.twentytwo.active {
+    display: block;
+}
+
+.cheap {
+    font-weight: bold;
+    color: #087c08;
+    font-size: 2em;
+}
+
+.cheap:after {
+    font-family: FontAwesome;
+    content: "\f00c";
+    margin-left: 5px;
+}
+
+.calculator h3 {
+    margin: 0;
+}
+
+.calculator .row {
+    margin-bottom: 15px;
+    flex-basis: 30%;
+}
+
+.calculator .row.total {
+    display: none;
+    background-color: #ccc;
+    padding: 10px;
+    flex-basis: 100%;
+}
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+    .calculator {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 769px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+}
+/*********************************************************************
+  YOUR MEDIUM-DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 805px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container {
+        padding: 0;
+    }
+}
+/*********************************************************************
+  YOUR LARGE DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 1205px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 769px or larger -- so desktop */
+    .container.image .caption,
+    .container.image figcaption {
+        padding: 5px 0;
+    }
+}
