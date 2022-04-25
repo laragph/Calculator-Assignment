@@ -6,6 +6,7 @@
 body,
 html {
     font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
 figure,
 img {
@@ -18,6 +19,14 @@ p {
     line-height: 1.2em;
 }
 
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+li, h4 {
+    line-height: 1.2em;
+    font-size: 12px;
+}
 .caption,
 figcaption {
     font-size: 0.9rem;
@@ -43,7 +52,7 @@ figcaption {
 }
 
 .calc-container {
-    background-color: #f7f7f7;
+    background-color: #9ee6fc;
     padding: 22px 0;
 }
 
@@ -87,7 +96,7 @@ figcaption {
 
 .cheap {
     font-weight: bold;
-    color: #087c08;
+    color: #fc8a20;
     font-size: 2em;
 }
 
